@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  font-family: roboto;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 197px;
+  height: 36px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+  margin: 0;
+  background-color: rgb(243, 243, 243);
+}
+main p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+}
+
+.explorer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.explorer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+.explorer div h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.explorer div p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.explorer div #explorer_button {
+  width: 218px;
+}
+
+section.fonctionnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+  border: solid 2px black;
+}
+section.fonctionnement div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.restaurant div.vignette {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 251px;
+  margin-top: 15px;
+  background-color: white;
+  border-radius: 15px;
+}
+section.restaurant div.vignette a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 251px;
+}
+section.restaurant div.vignette a img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 68%;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+section.restaurant div.vignette p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 15px;
+  margin: 0;
+}
+section.restaurant div.vignette h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 15px;
+  margin: 0;
+}
+section.restaurant div.vignette span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 10px;
+  border: solid 2px black;
+  margin-top: 15px;
+  padding-bottom: 10px;
+  row-gap: 10px;
+}
+
+.pink_button {
+  height: 50px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border-radius: 25px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 121, 218)), to(rgb(147, 86, 220)));
+  background: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
+  border: transparent;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  font-weight: 500;
+}/*# sourceMappingURL=index.css.map */

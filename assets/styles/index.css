@@ -1,3 +1,37 @@
+@charset "UTF-8";
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.pink_button {
+  height: 50px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border-radius: 25px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 121, 218)), to(rgb(147, 86, 220)));
+  background: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
+  border: transparent;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nouveauté {
+  width: 80px;
+  height: 29px;
+  background: rgb(153, 226, 208);
+  color: rgb(0, 135, 102);
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-size: 14px;
+}
+
 body {
   margin: 0;
   font-family: roboto;
@@ -10,6 +44,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 63px;
 }
 header div {
   display: -webkit-box;
@@ -17,6 +52,7 @@ header div {
   display: flex;
   width: 197px;
   height: 36px;
+  margin: 14px 0 14px 0;
 }
 
 main {
@@ -27,9 +63,8 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 15px;
   margin: 0;
-  background-color: rgb(243, 243, 243);
+  background-color: rgb(246, 246, 246);
 }
 main p {
   display: -webkit-box;
@@ -48,27 +83,30 @@ main p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 60px;
 }
-.explorer div {
+.explorer p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 300;
+}
+.explorer div {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
   text-align: center;
-}
-.explorer div h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.explorer div p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 .explorer div #explorer_button {
   width: 218px;
@@ -82,8 +120,12 @@ section.fonctionnement {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 20px;
-  border: solid 2px black;
+  padding: 30px 15px 60px 15px;
+  row-gap: 20px;
+  background: rgb(255, 255, 255);
+}
+section.fonctionnement h2 {
+  margin-bottom: 10px;
 }
 section.fonctionnement div {
   display: -webkit-box;
@@ -92,8 +134,24 @@ section.fonctionnement div {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 73px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  background: rgb(246, 246, 246);
 }
 
+section.restaurant {
+  padding: 30px 0 60px 0;
+}
+section.restaurant h2 {
+  margin-left: 15px;
+}
 section.restaurant div.vignette {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -106,11 +164,11 @@ section.restaurant div.vignette {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 251px;
-  margin-top: 15px;
+  margin: 15px;
   background-color: white;
   border-radius: 15px;
 }
-section.restaurant div.vignette a {
+section.restaurant a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,19 +179,21 @@ section.restaurant div.vignette a {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 251px;
+  color: black;
+  text-decoration-line: none;
 }
-section.restaurant div.vignette a img {
+section.restaurant a img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 68%;
+  height: 176px;
   width: auto;
   -o-object-fit: cover;
      object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-section.restaurant div.vignette p {
+section.restaurant p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,7 +203,7 @@ section.restaurant div.vignette p {
   padding-left: 15px;
   margin: 0;
 }
-section.restaurant div.vignette h3 {
+section.restaurant h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,14 +212,6 @@ section.restaurant div.vignette h3 {
           justify-content: flex-start;
   padding-left: 15px;
   margin: 0;
-}
-section.restaurant div.vignette span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 footer {
@@ -170,28 +222,23 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-left: 10px;
+  background: rgb(53, 53, 53);
+  padding: 0 0 20px 20px;
+  row-gap: 10px;
+  color: rgb(255, 255, 255);
+}
+footer h3 {
+  margin: 20px 0 0 0;
+  font-family: Shrikhand;
+  font-size: 18px;
+  font-weight: 400;
+}
+footer a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding-left: 10px;
-  border: solid 2px black;
-  margin-top: 15px;
-  padding-bottom: 10px;
-  row-gap: 10px;
-}
-
-.pink_button {
-  height: 50px;
-  -ms-flex-item-align: center;
-      align-self: center;
-  border-radius: 25px;
-  cursor: pointer;
   color: rgb(255, 255, 255);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 121, 218)), to(rgb(147, 86, 220)));
-  background: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
-  border: transparent;
-  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
-          box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
-  font-size: 16px;
-  font-weight: 500;
+  text-decoration-line: none;
+  row-gap: 5px;
 }/*# sourceMappingURL=index.css.map */

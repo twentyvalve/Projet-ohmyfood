@@ -48,6 +48,15 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   height: 63px;
+  width: 100%;
+  position: relative;
+}
+header i {
+  color: rgb(53, 53, 53);
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 18px;
 }
 header div {
   display: -webkit-box;
@@ -69,7 +78,7 @@ main {
   margin: 0;
   background-color: rgb(246, 246, 246);
 }
-main p {
+main .gps {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,6 +89,17 @@ main p {
       -ms-flex-align: center;
           align-items: center;
   height: 50px;
+  margin-top: 0;
+  -webkit-box-shadow: 0 1px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1px 4px 4px rgba(0, 0, 0, 0.25);
+  background: rgb(234, 234, 234);
+  font-size: 16px;
+  font-weight: 500;
+}
+main .gps i {
+  padding-right: 15px;
+  font-size: 16px;
+  color: rgb(53, 53, 53);
 }
 
 .explorer {
@@ -102,6 +122,9 @@ main p {
   margin-bottom: 30px;
   font-size: 18px;
   font-weight: 300;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: none;
 }
 .explorer div {
   -webkit-box-orient: vertical;
@@ -115,7 +138,7 @@ main p {
   width: 218px;
 }
 
-section.fonctionnement {
+.fonctionnement {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,10 +150,10 @@ section.fonctionnement {
   row-gap: 20px;
   background: rgb(255, 255, 255);
 }
-section.fonctionnement h2 {
+.fonctionnement h2 {
   margin-bottom: 10px;
 }
-section.fonctionnement div {
+.fonctionnement div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,15 +170,33 @@ section.fonctionnement div {
   -webkit-box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
   background: rgb(246, 246, 246);
-}
-
-section.restaurant {
-  padding: 30px 0 60px 0;
-}
-section.restaurant h2 {
+  position: relative;
   margin-left: 15px;
 }
-section.restaurant div.vignette {
+.fonctionnement div .number {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  text-align: center;
+  background: rgb(147, 86, 220);
+  color: rgb(246, 246, 246);
+  font-size: 14px;
+  margin: 0;
+  position: absolute;
+  left: -12px;
+}
+.fonctionnement div i {
+  color: rgb(147, 86, 220);
+  padding-right: 15px;
+}
+
+.restaurant {
+  padding: 30px 0 60px 0;
+}
+.restaurant h2 {
+  margin-left: 15px;
+}
+.restaurant .vignette {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,7 +212,7 @@ section.restaurant div.vignette {
   background-color: white;
   border-radius: 15px;
 }
-section.restaurant a {
+.restaurant a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,7 +227,7 @@ section.restaurant a {
   text-decoration-line: none;
   position: relative;
 }
-section.restaurant a img {
+.restaurant a img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,7 +238,13 @@ section.restaurant a img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-section.restaurant p {
+.restaurant a .heart {
+  position: absolute;
+  bottom: 25px;
+  right: 30px;
+  font-size: 22px;
+}
+.restaurant p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -210,16 +257,21 @@ section.restaurant p {
   padding-left: 15px;
   margin: 0;
   font-size: 17px;
+  margin-bottom: 10px;
 }
-section.restaurant h3 {
+.restaurant h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding-left: 15px;
-  margin: 15px 0 2px 0;
+  margin: 0;
+  margin-bottom: 5px;
 }
 
 footer {
@@ -253,4 +305,115 @@ footer a {
 footer a i {
   font-size: 16px;
   margin-right: 15px;
+  width: 15px;
+}
+
+.menu_img img {
+  height: 275px;
+  width: 100%;
+  padding-bottom: -20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main_menu {
+  padding: 0 10px 0 10px;
+  border-radius: 40px 40px 0 0;
+  margin-top: -50px;
+}
+.main_menu .title_h1_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: rgb(246, 246, 246);
+  margin: 0 -10px;
+  border-radius: 40px 40px 0 0;
+  position: relative;
+}
+.main_menu .title_h1_container .title_h1_menu {
+  font-family: Shrikhand;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  padding-left: 10px;
+}
+.main_menu .title_h1_container i {
+  font-stretch: extra-expanded;
+  font-size: 22px;
+  position: absolute;
+  right: 35px;
+  top: 25px;
+}
+.main_menu .vignette_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 10px;
+}
+.main_menu .vignette_menu .title_menu_decoration {
+  border-bottom: 3px solid rgb(153, 226, 208);
+  width: 40px;
+}
+.main_menu .title_vignette_menu {
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.main_menu .vignette_menu_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  height: 72px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+  background: rgb(246, 246, 246);
+}
+.main_menu .vignette_menu_container .title_h3_vignette {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  padding-left: 10px;
+}
+.main_menu .vignette_menu_container .p_vignette {
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0;
+  padding-left: 10px;
+}
+.main_menu .vignette_menu_container .menu_price {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  font-size: 15px;
+}
+.main_menu .pink_button_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.main_menu .pink_button_menu #menu_button {
+  width: 185px;
 }/*# sourceMappingURL=index.css.map */

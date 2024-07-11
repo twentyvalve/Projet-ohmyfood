@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: $font1;
+    user-select: none;
 }
 
 header {
@@ -38,7 +39,7 @@ main {
         align-items: center;
         height: 50px;
         margin-top: 0;
-        box-shadow: 0 1px 4px 4px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.15);
         background: rgba(234, 234, 234, 1);
         font-size: 16px;
         font-weight: 500;
@@ -63,7 +64,6 @@ main {
         margin-bottom: 30px;
         font-size: 18px;
         font-weight: 300;
-        box-shadow: none;
         background: none;
     }
 
@@ -89,9 +89,10 @@ main {
         margin-bottom: 10px;
     }
 
-    div {
+    .number_container {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+        padding-left: 30px;
         align-items: center;
         height: 73px;
         border-radius: 20px;
@@ -103,10 +104,12 @@ main {
         margin-left: 15px;
 
         .number {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 24px;
             height: 24px;
             border-radius: 50%;
-            text-align: center;
             background: $purple1;
             color: $white1;
             font-size: 14px;
@@ -116,8 +119,13 @@ main {
         }
 
         i {
-            color: $purple1;
+            justify-content: center;
+            color: $grey3;
             padding-right: 15px;
+        }
+
+        i:hover {
+            color: $purple1;
         }
     }
 }
@@ -131,12 +139,13 @@ main {
 
     .vignette {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         flex-direction: column;
         height: 251px;
         margin: 15px;
         background-color: white;
         border-radius: 15px;
+        position: relative;
     }
 
     a {
@@ -146,7 +155,6 @@ main {
         height: 251px;
         color: black;
         text-decoration-line: none;
-        position: relative;
 
         img {
             display: flex;
@@ -157,31 +165,24 @@ main {
             border-top-right-radius: 15px;
         }
 
-        .heart {
-            position: absolute;
-            bottom: 25px;
-            right: 30px;
-            font-size: 22px;
+        .vignette_menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-direction: row;
+
+            p {
+                padding-left: 15px;
+                margin: 0;
+                font-size: 17px;
+                margin-bottom: 15px;
+            }
+
+            h3 {
+                padding-left: 15px;
+                margin: 0;
+            }
         }
-    }
-
-    p {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding-left: 15px;
-        margin: 0;
-        font-size: 17px;
-        margin-bottom: 10px;
-    }
-
-    h3 {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding-left: 15px;
-        margin: 0;
-        margin-bottom: 5px;
     }
 }
 

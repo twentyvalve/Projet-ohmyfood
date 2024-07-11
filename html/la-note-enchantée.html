@@ -9,10 +9,13 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="../assets/styles/index.css">
+    <link rel="stylesheet" href="../styles/styles/index.css">
 </head>
 
 <body>
+    <div class="loader">
+        <div class="spin"><i class="fas fa-spinner"></i></div>
+    </div>
     <header>
         <div>
             <img src="../assets/img/logo/ohmyfood.png" alt="logo ohmyfood">
@@ -23,77 +26,128 @@
     <main class="main_menu">
         <div class="title_h1_container">
             <h1 class="title_h1_menu">La note enchantée</h1>
-            <i class="far fa-heart"></i>
+            <div class="heart"><i class="far fa-heart coeurVide"></i><i class="fas fa-heart coeurPlein"></i>
+            </div>
         </div>
         <section class="vignette_menu">
             <div class="title_menu_decoration">
                 <h2 class="title_vignette_menu">entrées</h2>
             </div>
-            <div class="vignette_menu_container">
-                <h3 class="title_h3_vignette">Ravioles de foie gras</h3>
-                <p class="p_vignette">Accompagnées de leur crème à la truffe
-                </p>
-                <div class="menu_price">25€</div>
+            <div class="vignette_menu_container appearance">
+                <div class="vignette_description">
+                    <h3 class="title_h3_vignette">Ravioles de foie gras</h3>
+                    <p class="p_vignette">Accompagnées de leur crème à la truffe
+                    </p>
+                </div>
+                <span class="menu_price">25€</span>
+                <div class="logo_check">
+                    <i class="fas fa-check"></i>
+                </div>
             </div>
-            <div class="vignette_menu_container">
-                <h3 class="title_h3_vignette">Caviar osciètre</h3>
-                <p class="p_vignette">Sur blini à la farine de blé noir
-                </p>
-                <div class="menu_price">35€</div>
+            <div class="vignette_menu_container appearance">
+                <div class="vignette_description">
+                    <h3 class="title_h3_vignette">Caviar osciètre</h3>
+                    <p class="p_vignette">Sur blini à la farine de blé noir
+                    </p>
+                </div>
+                <span class="menu_price">35€</span>
+                <div class="logo_check">
+                    <i class="fas fa-check"></i>
+                </div>
             </div>
-            <div class="vignette_menu_container">
-                <h3 class="title_h3_vignette">Homard et espuma de potiron</h3>
-                <p class="p_vignette">Marinés aux zestes d'orange
-                </p>
-                <div class="menu_price">20€</div>
+            <div class="vignette_menu_container appearance">
+                <div class="vignette_description">
+                    <h3 class="title_h3_vignette">Homard et espuma de potiron</h3>
+                    <p class="p_vignette">Marinés aux zestes d'orange
+                    </p>
+                </div>
+                <span class="menu_price">20€</span>
+                <div class="logo_check">
+                    <i class="fas fa-check"></i>
+                </div>
             </div>
-            <div class="vignette_menu_container">
-                <h3 class="title_h3_vignette">Foie gras de canard cuit entier</h3>
-                <p class="p_vignette">Confiture de figue et pain toasté
-                </p>
-                <div class="menu_price">35€</div>
+            <div class="vignette_menu_container appearance">
+                <div class="vignette_description">
+                    <h3 class="title_h3_vignette">Foie gras de canard cuit entier</h3>
+                    <p class="p_vignette">Confiture de figue et pain toasté
+                    </p>
+                </div>
+                <span class="menu_price">35€</span>
+                <div class="logo_check">
+                    <i class="fas fa-check"></i>
+                </div>
             </div>
             <div class="title_menu_decoration">
                 <h2 class="title_vignette_menu">plats</h2>
             </div>
-            <div class="vignette_menu_container">
-                <h3 class="title_h3_vignette">Noix de coquilles Saint-Jacques</h3>
-                <p class="p_vignette">Sur lit de purée de céleri-rave
-                </p>
-                <div class="menu_price">40€</div>
+            <div class="vignette_menu_container appearance">
+                <div class="vignette_description">
+                    <h3 class="title_h3_vignette">Noix de coquilles Saint-Jacques</h3>
+                    <p class="p_vignette">Sur lit de purée de céleri-rave
+                    </p>
+                </div>
+                <span class="menu_price">40€</span>
+                <div class="logo_check">
+                    <i class="fas fa-check"></i>
+                </div>
             </div>
-            <div class="vignette_menu_container">
-                <h3 class="title_h3_vignette">Langoustine poêlée</h3>
-                <p class="p_vignette">Purée de patate douce
-                </p>
-                <div class="menu_price">35€</div>
+            <div class="vignette_menu_container appearance">
+                <div class="vignette_description">
+                    <h3 class="title_h3_vignette">Langoustine poêlée</h3>
+                    <p class="p_vignette">Purée de patate douce
+                    </p>
+                </div>
+                <span class="menu_price">35€</span>
+                <div class="logo_check">
+                    <i class="fas fa-check"></i>
+                </div>
             </div>
-            <div class="vignette_menu_container">
-                <h3 class="title_h3_vignette">Mijoté de queue de bœuf</h3>
-                <p class="p_vignette">Et riz sauvage aux zestes de citron
-                </p>
-                <div class="menu_price">44€</div>
+            <div class="vignette_menu_container appearance">
+                <div class="vignette_description">
+                    <h3 class="title_h3_vignette">Mijoté de queue de bœuf</h3>
+                    <p class="p_vignette">Et riz sauvage aux zestes de citron
+                    </p>
+                </div>
+                <span class="menu_price">44€</span>
+                <div class="logo_check">
+                    <i class="fas fa-check"></i>
+                </div>
             </div>
             <div class="title_menu_decoration">
                 <h2 class="title_vignette_menu">desserts</h2>
             </div>
-            <div class="vignette_menu_container">
-                <h3 class="title_h3_vignette">Macaron noisette et chocolat</h3>
-                <p class="p_vignette">Glace au caramel brun et sel de Guérande
-                </p>
-                <div class="menu_price">18€</div>
+            <div class="vignette_menu_container appearance">
+                <div class="vignette_description">
+                    <h3 class="title_h3_vignette">Macaron noisette et chocolat</h3>
+                    <p class="p_vignette">Glace au caramel brun et sel de Guérande
+                    </p>
+                </div>
+                <span class="menu_price">18€</span>
+                <div class="logo_check">
+                    <i class="fas fa-check"></i>
+                </div>
             </div>
-            <div class="vignette_menu_container">
-                <h3 class="title_h3_vignette">Baba au rhum revisité /h3>
+            <div class="vignette_menu_container appearance">
+                <div class="vignette_description">
+                    <h3 class="title_h3_vignette">Baba au rhum revisité </h3>
                     <p class="p_vignette">Avec son coulis de citron
                     </p>
-                    <div class="menu_price">22€</div>
+                </div>
+                <span class="menu_price">22€</span>
+                <div class="logo_check">
+                    <i class="fas fa-check"></i>
+                </div>
             </div>
-            <div class="vignette_menu_container">
-                <h3 class="title_h3_vignette">Tarte au citron meringuée </h3>
-                <p class="p_vignette">Déstructurée
-                </p>
-                <div class="menu_price">23€</div>
+            <div class="vignette_menu_container appearance">
+                <div class="vignette_description">
+                    <h3 class="title_h3_vignette">Tarte au citron meringuée </h3>
+                    <p class="p_vignette">Déstructurée
+                    </p>
+                </div>
+                <span class="menu_price">23€</span>
+                <div class="logo_check">
+                    <i class="fas fa-check"></i>
+                </div>
             </div>
         </section>
         <div class="pink_button_menu">

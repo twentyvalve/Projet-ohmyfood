@@ -1,0 +1,95 @@
+// Bouton rose
+.pink_button {
+    height: 50px;
+    align-self: center;
+    border-radius: 25px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 1);
+    background: $pinkgradient;
+    border: transparent;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.pink_button:hover {
+    opacity: 0.85;
+    animation: pink_button .6s cubic-bezier(.39, .575, .565, 1.000);
+    animation-fill-mode: both;
+}
+
+// petit logo "nouveauté"
+.nouveauté {
+    width: 80px;
+    height: 29px;
+    background: $green1;
+    color: $green2;
+    text-align: center;
+    align-content: center;
+    font-size: 14px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+// animation coeur
+.heart {
+    display: flex;
+    padding: 15px;
+
+    .coeurVide {
+        font-size: 22px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .coeurPlein {
+        font-size: 22px;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+// Changement couleur coeur au hover
+.heart:hover {
+    .coeurVide {
+        position: absolute;
+        z-index: -1;
+    }
+
+    .coeurPlein {
+        position: relative;
+        z-index: 1;
+        background: $pinkgradientreverse;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: pinkyheart .4s cubic-bezier(.39, .575, .565, 1.000)
+    }
+}
+
+// Apparition des menu
+.appearance {
+    animation-name: appearance;
+    animation-delay: 3s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+// Page de chargement
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    background-color: $white1;
+    z-index: 2;
+    inset: 0;
+    animation: disappearance 200ms 3s both;
+}
+
+.spin {
+    font-size: xxx-large;
+    color: $purple1;
+    animation: spin 1.5s infinite linear;
+}

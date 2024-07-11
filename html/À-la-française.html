@@ -9,10 +9,13 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="../assets/styles/index.css">
+    <link rel="stylesheet" href="../styles/styles/index.css">
 </head>
 
 <body>
+    <div class="loader">
+        <div class="spin"><i class="fas fa-spinner"></i></div>
+    </div>
     <header>
         <div>
             <img src="../assets/img/logo/ohmyfood.png" alt="logo ohmyfood">
@@ -25,71 +28,117 @@
     <main class="main_menu">
         <div class="title_h1_container">
             <h1 class="title_h1_menu">À la française</h1>
-            <i class="far fa-heart"></i>
+            <div class="heart"><i class="far fa-heart coeurVide"></i><i class="fas fa-heart coeurPlein"></i>
+            </div>
         </div>
         <section class="vignette_menu">
             <div class="title_menu_decoration">
                 <h2 class="title_vignette_menu">entrées</h2>
             </div>
-            <div class="vignette_menu_container">
-                <h3 class="title_h3_vignette">Tartare de poulpe acidulé</h3>
-                <p class="p_vignette">Aux zestes d'orange
-                </p>
-                <div class="menu_price">25€</div>
+            <div class="vignette_menu_container appearance">
+                <div class="vignette_description">
+                    <h3 class="title_h3_vignette">Tartare de poulpe acidulé</h3>
+                    <p class="p_vignette">Aux zestes d'orange
+                    </p>
+                </div>
+                <span class="menu_price">25€</span>
+                <div class="logo_check">
+                    <i class="fas fa-check"></i>
+                </div>
             </div>
-            <div class="vignette_menu_container">
-                <h3 class="title_h3_vignette">Velouté de légumes d'antan</h3>
-                <p class="p_vignette">Carotte, panais, topinambour
-                </p>
-                <div class="menu_price">35€</div>
+            <div class="vignette_menu_container appearance">
+                <div class="vignette_description">
+                    <h3 class="title_h3_vignette">Velouté de légumes d'antan</h3>
+                    <p class="p_vignette">Carotte, panais, topinambour
+                    </p>
+                </div>
+                <span class="menu_price">35€</span>
+                <div class="logo_check">
+                    <i class="fas fa-check"></i>
+                </div>
             </div>
-            <div class="vignette_menu_container">
-                <h3 class="title_h3_vignette">Soupe à l'oignon</h3>
-                <p class="p_vignette">Revisitée
-                </p>
-                <div class="menu_price">20€</div>
+            <div class="vignette_menu_container appearance">
+                <div class="vignette_description">
+                    <h3 class="title_h3_vignette">Soupe à l'oignon</h3>
+                    <p class="p_vignette">Revisitée
+                    </p>
+                </div>
+                <span class="menu_price">20€</span>
+                <div class="logo_check">
+                    <i class="fas fa-check"></i>
+                </div>
             </div>
             <div class="title_menu_decoration">
                 <h2 class="title_vignette_menu">plats</h2>
             </div>
-            <div class="vignette_menu_container">
-                <h3 class="title_h3_vignette">Coquilles Saint-Jacques</h3>
-                <p class="p_vignette">Accompagnées d'une purée de panais
-                </p>
-                <div class="menu_price">40€</div>
+            <div class="vignette_menu_container appearance">
+                <div class="vignette_description">
+                    <h3 class="title_h3_vignette">Coquilles Saint-Jacques</h3>
+                    <p class="p_vignette">Accompagnées d'une purée de panais
+                    </p>
+                </div>
+                <span class="menu_price">40€</span>
+                <div class="logo_check">
+                    <i class="fas fa-check"></i>
+                </div>
             </div>
-            <div class="vignette_menu_container">
-                <h3 class="title_h3_vignette">Magret de canard</h3>
-                <p class="p_vignette">Et parmentier de pommes de terre
-                </p>
-                <div class="menu_price">35€</div>
+            <div class="vignette_menu_container appearance">
+                <div class="vignette_description">
+                    <h3 class="title_h3_vignette">Magret de canard</h3>
+                    <p class="p_vignette">Et parmentier de pommes de terre
+                    </p>
+                </div>
+                <span class="menu_price">35€</span>
+                <div class="logo_check">
+                    <i class="fas fa-check"></i>
+                </div>
             </div>
-            <div class="vignette_menu_container">
-                <h3 class="title_h3_vignette">Pigeonneau d’Ille-et-Vilaine</h3>
-                <p class="p_vignette">Sur son lit de gnocchis aux légumes
-                </p>
-                <div class="menu_price">44€</div>
+            <div class="vignette_menu_container appearance">
+                <div class="vignette_description">
+                    <h3 class="title_h3_vignette">Pigeonneau d’Ille-et-Vilaine</h3>
+                    <p class="p_vignette">Sur son lit de gnocchis aux légumes
+                    </p>
+                </div>
+                <span class="menu_price">44€</span>
+                <div class="logo_check">
+                    <i class="fas fa-check"></i>
+                </div>
             </div>
             <div class="title_menu_decoration">
                 <h2 class="title_vignette_menu">desserts</h2>
             </div>
-            <div class="vignette_menu_container">
-                <h3 class="title_h3_vignette">Pétales de violettes glacés</h3>
-                <p class="p_vignette">Et purée de noisettes
-                </p>
-                <div class="menu_price">18€</div>
+            <div class="vignette_menu_container appearance">
+                <div class="vignette_description">
+                    <h3 class="title_h3_vignette">Pétales de violettes glacés</h3>
+                    <p class="p_vignette">Et purée de noisettes
+                    </p>
+                </div>
+                <span class="menu_price">18€</span>
+                <div class="logo_check">
+                    <i class="fas fa-check"></i>
+                </div>
             </div>
-            <div class="vignette_menu_container">
-                <h3 class="title_h3_vignette">Fondant au chocolat/h3>
+            <div class="vignette_menu_container appearance">
+                <div class="vignette_description">
+                    <h3 class="title_h3_vignette">Fondant au chocolat</h3>
                     <p class="p_vignette">Revisité
                     </p>
-                    <div class="menu_price">22€</div>
+                </div>
+                <span class="menu_price">22€</span>
+                <div class="logo_check">
+                    <i class="fas fa-check"></i>
+                </div>
             </div>
-            <div class="vignette_menu_container">
-                <h3 class="title_h3_vignette">Millefeuille croustillant</h3>
-                <p class="p_vignette">Myrtilles et pâte d’amande
-                </p>
-                <div class="menu_price">23€</div>
+            <div class="vignette_menu_container appearance">
+                <div class="vignette_description">
+                    <h3 class="title_h3_vignette">Millefeuille croustillant</h3>
+                    <p class="p_vignette">Myrtilles et pâte d’amande
+                    </p>
+                </div>
+                <span class="menu_price">23€</span>
+                <div class="logo_check">
+                    <i class="fas fa-check"></i>
+                </div>
             </div>
         </section>
         <div class="pink_button_menu">

@@ -12,12 +12,7 @@ $grey3: rgba(126, 126, 126, 1);
 $pinkgradient: linear-gradient(rgba(255, 121, 218, 1), rgba(147, 86, 220, 1));
 $pinkgradientreverse: linear-gradient(rgba(147, 86, 220, 1), rgba(255, 121, 218, 1));
 
-h1 {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 0;
-}
-
+// animation coeur rose
 @keyframes pinkyheart {
     0% {
         transform: scale(.5)
@@ -28,6 +23,7 @@ h1 {
     }
 }
 
+// animation bouton rose
 @keyframes pink_button {
     0% {
         transform: scale3d(1.0, 1.0, 1.0);
@@ -38,6 +34,7 @@ h1 {
     }
 }
 
+// animation d'apparition des menus
 @keyframes appearance {
     0% {
         opacity: 0;
@@ -48,6 +45,7 @@ h1 {
     }
 }
 
+// animation du loader
 @keyframes disappearance {
     0% {
         transform: scale(1);
@@ -63,6 +61,7 @@ h1 {
     }
 }
 
+// animation icon du loader
 @keyframes spin {
     0% {
         transform-origin: center;
@@ -75,6 +74,7 @@ h1 {
     }
 }
 
+// animation rotation icon check
 @keyframes check_rotation {
     0% {
         transform: rotate(-270deg);

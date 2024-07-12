@@ -89,6 +89,12 @@ main {
         margin-bottom: 10px;
     }
 
+    .vignette_fonctionnement {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+
     .number_container {
         display: flex;
         justify-content: flex-start;
@@ -192,17 +198,25 @@ footer {
     padding-left: 10px;
     background: $grey1;
     padding: 0 0 20px 20px;
-    row-gap: 7px;
+    row-gap: 1rem;
     color: rgba(255, 255, 255, 1);
 
     h3 {
+        display: flex;
         margin: 20px 0 0 0;
         font-family: $font2;
         font-size: 18px;
         font-weight: 400;
     }
 
+    .a_footer {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
+    }
+
     a {
+        display: flex;
         justify-content: flex-start;
         color: rgba(255, 255, 255, 1);
         text-decoration-line: none;

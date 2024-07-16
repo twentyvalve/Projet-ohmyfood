@@ -14,23 +14,33 @@ $pinkgradientreverse: linear-gradient(rgba(147, 86, 220, 1), rgba(255, 121, 218,
 
 // animation coeur rose
 @keyframes pinkyheart {
-    0% {
-        transform: scale(.5)
+    from {
+        transform: scale(0)
     }
 
-    100% {
+    to {
         transform: scale(1.0)
     }
 }
 
 // animation bouton rose
 @keyframes pink_button {
-    0% {
+    from {
         transform: scale3d(1.0, 1.0, 1.0);
     }
 
-    100% {
+    to {
         transform: scale3d(1.025, 1.025, 1.025);
+    }
+}
+
+@keyframes pink_button_over {
+    from {
+        transform: scale3d(1.025, 1.025, 1.025);
+    }
+
+    to {
+        transform: scale3d(1.0, 1.0, 1.0);
     }
 }
 

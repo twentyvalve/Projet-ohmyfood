@@ -10,6 +10,9 @@
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
     font-size: 16px;
     font-weight: 500;
+    opacity: 0.85;
+    animation: pink_button_over .6s cubic-bezier(.39, .575, .565, 1.000);
+    animation-fill-mode: both;
 }
 
 .pink_button:hover {
@@ -63,16 +66,32 @@
         background: $pinkgradientreverse;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: pinkyheart .4s cubic-bezier(.39, .575, .565, 1.000)
+        animation: pinkyheart .4s cubic-bezier(.39, .575, .565, 1.000);
     }
 }
 
 // Apparition des menu
-.appearance {
+.appearance_1 {
     animation-name: appearance;
-    animation-delay: 3s;
     animation-duration: 1.5s;
     animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+.appearance_2 {
+    animation-name: appearance;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+.appearance_3 {
+    animation-name: appearance;
+    animation-delay: 1s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
 }
 
 // Page de chargement
@@ -85,11 +104,11 @@
     background-color: $white1;
     z-index: 2;
     inset: 0;
-    animation: disappearance 200ms 3s both;
+    animation: disappearance 200ms 2s both;
 }
 
 .spin {
     font-size: xxx-large;
     color: $purple1;
-    animation: spin 1.5s infinite linear;
+    animation: spin 1s infinite linear;
 }

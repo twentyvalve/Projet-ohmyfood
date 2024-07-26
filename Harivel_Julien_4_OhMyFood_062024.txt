@@ -1,4 +1,0 @@
-Lien du repository :
-https://github.com/twentyvalve/Projet-ohmyfood.git
-Lien du site :
-https://twentyvalve.github.io/Projet-ohmyfood/index.html 

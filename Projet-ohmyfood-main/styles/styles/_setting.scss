@@ -1,0 +1,96 @@
+$font1: roboto;
+$font2: Shrikhand;
+$white1: rgba(246, 246, 246, 1);
+$green1: rgba(153, 226, 208, 1);
+$green2: rgba(0, 135, 102, 1);
+$blue1: rgba(137, 200, 250, 1);
+$blue2: rgba(0, 58, 104, 1);
+$purple1: rgba(147, 86, 220, 1);
+$grey1: rgba(53, 53, 53, 1);
+$grey2: rgba(234, 234, 234, 1);
+$grey3: rgba(126, 126, 126, 1);
+$pinkgradient: linear-gradient(rgba(255, 121, 218, 1), rgba(147, 86, 220, 1));
+$pinkgradientreverse: linear-gradient(rgba(147, 86, 220, 1), rgba(255, 121, 218, 1));
+
+// animation coeur rose
+@keyframes pinkyheart {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1.0)
+    }
+}
+
+// animation bouton rose
+@keyframes pink_button {
+    from {
+        transform: scale3d(1.0, 1.0, 1.0);
+    }
+
+    to {
+        transform: scale3d(1.025, 1.025, 1.025);
+    }
+}
+
+@keyframes pink_button_over {
+    from {
+        transform: scale3d(1.025, 1.025, 1.025);
+    }
+
+    to {
+        transform: scale3d(1.0, 1.0, 1.0);
+    }
+}
+
+// animation d'apparition des menus
+@keyframes appearance {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+// animation du loader
+@keyframes disappearance {
+    0% {
+        transform: scale(1);
+        opacity: 0.85;
+    }
+
+    98% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+// animation icon du loader
+@keyframes spin {
+    0% {
+        transform-origin: center;
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform-origin: center;
+        transform: none;
+    }
+}
+
+// animation rotation icon check
+@keyframes check_rotation {
+    0% {
+        transform: rotate(-270deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}

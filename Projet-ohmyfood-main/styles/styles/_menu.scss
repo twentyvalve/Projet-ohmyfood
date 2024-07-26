@@ -1,0 +1,161 @@
+.menu_img {
+    img {
+        height: 275px;
+        width: 100%;
+        padding-bottom: -20px;
+        object-fit: cover;
+    }
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.main_menu {
+    padding: 0 10px 0 10px;
+    border-radius: 40px 40px 0 0;
+    margin-top: -50px;
+    background-color: $white1;
+
+    .title_h1_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        background-color: $white1;
+        margin: 0 -10px;
+        border-radius: 40px 40px 0 0;
+
+        .title_h1_menu {
+            font-family: $font2;
+            font-size: 28px;
+            font-style: italic;
+            font-weight: 400;
+            padding-left: 10px;
+        }
+
+        i {
+            font-stretch: extra-expanded;
+            font-size: 22px;
+        }
+    }
+
+    .appearance_1,
+    .appearance_2,
+    .appearance_3 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+        padding-top: 12px;
+        padding-bottom: 24px;
+    }
+
+    .vignette_menu {
+        display: flex;
+        flex-direction: column;
+        background-color: (255, 255, 255, 1);
+
+        .title_menu_decoration {
+            border-bottom: 3px solid $green1;
+            width: 40px;
+        }
+    }
+
+    .title_vignette_menu {
+        font-size: 16px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+    .vignette_menu_container {
+        display: flex;
+        height: 72px;
+        border-radius: 15px;
+        font-size: 16px;
+        font-weight: 500;
+        box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+        background: rgba(255, 255, 255, 1);
+        overflow: hidden;
+
+        &:hover .logo_check {
+            margin-right: 0;
+
+            i {
+                animation: check_rotation 0.5s ease-in-out
+            }
+        }
+
+        .vignette_description {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding-left: 1rem;
+            overflow: hidden;
+        }
+
+        .title_h3_vignette {
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0;
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .p_vignette {
+            font-size: 15px;
+            font-weight: 300;
+            margin: 0;
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .menu_price {
+            display: flex;
+            align-items: flex-end;
+            font-size: 15px;
+            padding: 1rem;
+            margin-left: auto;
+        }
+
+        .logo_check {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            background: $green1;
+            margin-right: -59px;
+            width: 59px;
+            min-width: 59px;
+            transition: margin-right 0.5s;
+
+            .fa-check {
+                display: grid;
+                place-items: center;
+                background-color: $white1;
+                aspect-ratio: 1;
+                width: 1.4rem;
+                border-radius: 2rem;
+                color: $green1;
+            }
+        }
+    }
+
+    .pink_button_menu {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        #menu_button {
+            width: 185px;
+        }
+    }
+}
